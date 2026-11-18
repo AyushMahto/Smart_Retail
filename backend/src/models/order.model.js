@@ -59,6 +59,23 @@ const orderSchema = new mongoose.Schema(
     }],
     finalizedShopleeper:{
       type: Number,
+    },
+    deliveryId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Delivery",
+    },
+    deliveryPartner: {
+      type: Number,
+    },
+    deliveryStatus: {
+      type: String,
+      default: "pending",
+    },
+    otp: {
+      type: String,
+    },
+    otp_expire: {
+      type: Date,
     }
 
   },

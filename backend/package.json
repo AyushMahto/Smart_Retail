@@ -10,7 +10,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "test": "node src/tests/delivery.test.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

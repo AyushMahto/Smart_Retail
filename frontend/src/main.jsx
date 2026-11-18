@@ -1,4 +1,5 @@
 import './index.css'
+import 'leaflet/dist/leaflet.css'
 import React from 'react'
 import { Provider } from 'react-redux'
 import store, { persistor } from './store/store.js';

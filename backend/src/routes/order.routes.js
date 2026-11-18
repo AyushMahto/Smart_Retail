@@ -10,9 +10,10 @@ import {
 const router = Router();
 
 router.route("/create-orders/:phone").post(createOrder)
+router.route("/create-order/:phone").post(createOrder)
 router.route("/get-customer-orders/:phone").get(getCurrentCustomerOrders)
 router.route("/get-shopkepper-orders/:phone").get(getCurrentShopkepperOrders)
-router.route("/update-order/:orderBy").patch(updateOrder)
+router.route("/update-order/:orderBy").patch(updateOrder).post(updateOrder)
 router.route("/confirm-order").post(confirmOrder)
 
 export default router
